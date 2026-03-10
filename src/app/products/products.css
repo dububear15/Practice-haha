@@ -1,0 +1,38 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: pink;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #ddd;
+  transition: transform 0.2s; /* Lab 3 Hover effect requirement */
+}
+
+/* Hover effect for Lab 3 bonus points */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.product-card button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-card button:hover {
+  background-color: #1565c0;
+} 
+
