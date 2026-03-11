@@ -6,33 +6,82 @@
 }
 
 .product-card {
-  background-color: pink;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff0f5; /* Light Pink */
+  padding: 20px;
+  border-radius: 12px;
   text-align: center;
-  border: 1px solid #ddd;
-  transition: transform 0.2s; /* Lab 3 Hover effect requirement */
+  border: 1px solid #ffb6c1;
+  transition: transform 0.3s;
 }
 
-/* Hover effect for Lab 3 bonus points */
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Zoom effect */
 }
 
-/* Button styling */
-.product-card button {
-  background-color: #1976d2;
+button {
+  background-color: #e91e63;
   color: white;
   border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
+  padding: 10px 15px;
+  border-radius: 20px;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.product-card button:hover {
-  background-color: #1565c0;
-} 
+/* Navbar Styling */
+.navbar {
+  background-color: #e91e63;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Product Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.product-card {
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #ffb6c1;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}

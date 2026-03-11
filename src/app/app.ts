@@ -6,8 +6,7 @@ import { ProductsComponent } from './products/products';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ProductsComponent],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  template: '<app-products></app-products>', // Simplified to show products immediately
 })
 export class App {
   title = 'My Angular Shop';

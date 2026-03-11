@@ -1,9 +1,16 @@
-<header style="background: #1976d2; color: white; padding: 15px; display: flex; justify-content: space-between;">
-  <h1>My Angular Shop</h1>
-  <div class="cart-status">
-    🛒 Cart: <strong>{{ cart.length }} items</strong> | Total: ₱{{ cartTotal }}
+<nav class="navbar">
+  <div class="nav-brand">Pink Beauty</div>
+  
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <div class="nav-cart">
+    🛒 Cart: {{ cart.length }} | ₱{{ cartTotal }}
   </div>
-</header>
+</nav>
 
 <div class="products">
   <div class="product-card" *ngFor="let item of products">
@@ -13,13 +20,6 @@
   </div>
 </div>
 
-<div *ngIf="cart.length > 0" style="margin-top: 30px; padding: 20px; border-top: 2px solid #ccc;">
-  <h3>Your Shopping Cart</h3>
-  <ul>
-    <li *ngFor="let cartItem of cart">
-      {{ cartItem.name }} - ₱{{ cartItem.price }}
-    </li>
-  </ul>
-  <button style="background: orange; color: white; padding: 10px;">Checkout</button>
-</div>
-
+<footer class="footer">
+  <p>&copy; 2026 Raphoncel Eduria | Home • Products • Contact</p>
+</footer>
